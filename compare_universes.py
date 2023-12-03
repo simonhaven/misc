@@ -5,12 +5,13 @@ def get_largest_returns_for_country(country_df):
 
         largest_positive = country_df[country_df['RETURN'] > 0].nlargest(3, 'RETURN')
         largest_negative = country_df[country_df['RETURN'] < 0].nsmallest(3, 'RETURN')
-        return (largest_positive, largest_negative)
+        return (largest_positive[['AXIOMA_ID','RETURN']], largest_negative[['AXIOMA_ID','RETURN']])
         
 def get_largest_market_caps_for_country(country_df):
 
         country_df['MARKET_CAP'] = country_df['TSO'] * country_df['PRICE']
-        return country_df[country_df['MARKET_CAP'] > 0].nlargest(5, 'MARKET_CAP')
+        largest_market_caps = country_df[country_df['MARKET_CAP'] > 0].nlargest(5, 'MARKET_CAP').round(0)
+        return largest_market_caps[['AXIOMA_ID','MARKET_CAP']]
         
 def compare_by_country(univ_df):
         country_list = univ_df['COUNTRY'].unique()
