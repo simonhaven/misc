@@ -1,7 +1,6 @@
 import unittest
 import pandas as pd
 import numpy as np
-from pandas.util.testing import assert_frame_equal
 import compare_universes as cu
 
 class UniverseTest(unittest.TestCase):
