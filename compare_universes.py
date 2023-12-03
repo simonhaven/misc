@@ -16,6 +16,8 @@ def get_largest_market_caps_for_country(country_df):
 def compare_by_country(univ_df):
         country_list = univ_df['COUNTRY'].unique()
         for country in country_list:
+            if not country or pd.isnull(country):
+                continue
             print(f"\nCountry: {country}")
             country_df = univ_df[univ_df['COUNTRY'] == country]
             (largest_positive, largest_negative) = get_largest_returns_for_country(country_df)

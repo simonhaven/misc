@@ -401,14 +401,6 @@ Largest market caps:
  V67UPRL19  3.680210e+09
  GHCHQCRK9  8.313036e+08
 
-Country: nan
-Largest positive returns:
-None
-Largest negative returns:
-None
-Largest market caps:
-None
-
 Country: ES
 Largest positive returns:
 None
@@ -964,14 +956,6 @@ Largest market caps:
  92FJ9Q2Y8  1.838643e+11
  V67UPRL19  3.777375e+09
  GHCHQCRK9  8.193137e+08
-
-Country: nan
-Largest positive returns:
-None
-Largest negative returns:
-None
-Largest market caps:
-None
 
 Country: ES
 Largest positive returns:
