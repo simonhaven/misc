@@ -1,2 +1,2 @@
 # misc
-Miscellaneous stuff
+Various items
