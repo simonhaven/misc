@@ -1,5 +1,6 @@
 import sys
 import pandas as pd
+pd.options.mode.chained_assignment = None
 
 def get_largest_returns_for_country(country_df):
 
